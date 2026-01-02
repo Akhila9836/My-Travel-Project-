@@ -1,0 +1,208 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AgentMasterPage.master.cs" Inherits="AgentMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+      <title>VoyageVista</title>
+<!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 11]>
+   	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+   	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+   	<![endif]-->
+<!-- Meta -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="" />
+<meta name="keywords" content="">
+<meta name="author" content="Phoenixcoded" />
+<!-- Favicon icon -->
+<link rel="icon" href="admin/assets/images/favicon.ico" type="image/x-icon">
+
+<!-- vendor css -->
+<link rel="stylesheet" href="admin/assets/css/style.css">
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+        	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+	<!-- [ Pre-loader ] End -->
+	<!-- [ navigation menu ] start -->
+	<nav class="pcoded-navbar  ">
+		<div class="navbar-wrapper  ">
+			<div class="navbar-content scroll-div " >
+				
+				<div class="">
+					<div class="main-menu-header">
+						<img class="img-radius" src="admin/assets/images/user/avatar-4.jpg" alt="User-Profile-Image">
+						<div class="user-details">
+							<span>Agent</span>
+							<%--<div id="more-details">UX Designer<i class="fa fa-chevron-down m-l-5"></i></div>--%>
+						</div>
+					</div>
+					
+				</div>
+				
+							<ul class="nav pcoded-inner-navbar ">
+					<li class="nav-item pcoded-menu-caption">
+						<label>Package</label>
+					</li>
+					<li class="nav-item">
+					    <a href="AgentCreatePackage.aspx" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Create Package</span></a>
+					</li>
+					<li class="nav-item">
+					    <a href="AgentDeletePackage.aspx" class="nav-link "><span class="pcoded-micon"><i class="feather icon-layout"></i></span><span class="pcoded-mtext">Delete Package</span></a>
+					
+					</li>
+								<li class="nav-item">
+						<a href="AgentUpdatePackage.aspx" class="nav-link "><span class="pcoded-micon"><i class="feather icon-layout"></i></span><span class="pcoded-mtext">Update Package</span></a>
+
+					</li>
+					<li class="nav-item pcoded-menu-caption">
+						<label>Booking </label>
+					</li>
+					<li class="nav-item">
+					<a href="AgentViewBooking.aspx" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">View Booking</span></a>
+				</li>
+				
+
+									<li class="nav-item pcoded-menu-caption">
+					<label>Complaints </label>
+				</li>
+				<li class="nav-item">
+				<a href="AgentInbox.aspx" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Inbox</span></a>
+					</li>
+					<li class="nav-item">
+									<a href="AgentCompose.aspx" class="nav-link "><span class="pcoded-micon"><i class="feather icon-layout"></i></span><span class="pcoded-mtext">Compose</span></a>
+
+					</li>
+
+
+					
+									<li class="nav-item pcoded-menu-caption">
+					<label>Rating </label>
+				</li>
+				<li class="nav-item">
+				<a href="AgentViewRating.aspx" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">View Rating</span></a>
+					</li>
+					</ul>
+				
+				<li class="nav-item">
+    <a href="Homepage.aspx" class="nav-link "><span class="pcoded-micon"><i class="feather icon-map"></i></span><span class="pcoded-mtext">SignOut</span></a>
+</li>
+			
+				
+				
+			</div>
+		</div>
+	</nav>
+	<!-- [ navigation menu ] end -->
+	<!-- [ Header ] start -->
+	<header class="navbar pcoded-header navbar-expand-lg navbar-light header-dark">
+		
+			
+				<div class="m-header">
+					<a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+					<a href="#!" class="b-brand">
+						<!-- ========   change your logo hear   ============ -->
+						<img src="/admin/assets/images/logo.png" alt="" class="logo">
+						<img src="admin/assets/images/logo-icon.png" alt="" class="logo-thumb">
+					</a>
+					<a href="#!" class="mob-toggler">
+						<i class="feather icon-more-vertical"></i>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="navbar-nav mr-auto">
+						
+						<li class="nav-item">
+							<div class="dropdown mega-menu">
+								<a class="dropdown-toggle h-drop" href="Homepage.aspx" data-toggle="dropdown">
+									
+								</a>
+							
+							</div>
+						</li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+				
+						<li>
+							<div class="dropdown drp-user">
+								<a href="Homepage.aspx" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="feather icon-user"></i>
+								</a>
+								
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+			
+	</header>
+	<!-- [ Header ] end -->
+	
+	
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">Agent Pages</h5>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+        <!-- [ Main Content ] start -->
+        <div class="row">
+			<form id="form1" runat="server">
+            <!-- [ sample-page ] start -->
+            <div class="col-sm-12">
+                <div class="card">
+					 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                    <div class="card-header">
+                        <h5>Hello card</h5>
+                       
+                    </div>
+                    <div class="card-body">
+						
+ 
+ 
+                      
+						
+                    </div>
+					</asp:ContentPlaceHolder>
+                </div>
+            </div>
+           </form>
+        </div>
+       
+    </div>
+</div>
+
+    <script src="admin/assets/js/vendor-all.min.js"></script>
+    <script src="admin/assets/js/plugins/bootstrap.min.js"></script>
+    <script src="admin/assets/js/pcoded.min.js"></script>
+
+    
+    <div>
+       
+    </div>
+    
+</body>
+</html>
